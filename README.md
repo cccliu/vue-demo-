@@ -29,6 +29,7 @@ npm test
 
 
 vue项目搭建：
+
 A.  打包之后需要配置config/index.js文件
   -为了去除( .map)后缀文件 - productionSourceMap：false;
   -为了消除打包之后路径问题 -  assetsPublicPath : '. /' ;
@@ -55,8 +56,9 @@ const createLintingRule = () =>
 })； 
          
 这么处理之后，即可解决ESLint报警告的问题；
-
-   - 在mian.js入口文件中，添加代码：Vue.config.productionTip = false；
+ - 在mian.js入口文件中，添加代码：Vue.config.productionTip = false；
+   
+   
 C. style内容写入css代码。设置样式只对当前页面效果，对于其他页面就没有效果；
 	<style scoped></style>
 
